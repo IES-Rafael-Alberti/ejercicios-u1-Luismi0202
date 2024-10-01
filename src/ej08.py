@@ -9,4 +9,4 @@ for i in range (1,3 + 1):
     num = float(input())
     num = suma + num
     suma = num 
-print (f"¡¡MAGIA!! la suma de los 3 números es {suma}")
+print (f"¡¡MAGIA!! la suma de los 3 números es {round(suma,2)}")

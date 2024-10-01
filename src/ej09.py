@@ -3,4 +3,4 @@
 
 print ("Dame 3 números")
 #Imprimimos la suma de los 3 números que nos pongan
-print (f"¡¡MAGIA!! la suma de los 3 números es {float(input()) + float(input()) + float(input())}")
+print (f"¡¡MAGIA!! la suma de los 3 números es {round(float(input()) + float(input()) + float(input()),2)}")

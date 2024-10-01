@@ -3,7 +3,7 @@
 
 print("Dame el importe final de un articulo")
 precio = float(input())
-IVA= precio * 0.10
-SINIVA= precio - IVA
+IVA= round(precio * 0.10,2)
+SINIVA= round(precio - IVA,2)
 print(f"El precio de su articulo sin IVA es de {SINIVA} y el iva pagado es {IVA}€")
 

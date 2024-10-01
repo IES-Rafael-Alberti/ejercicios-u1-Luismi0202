@@ -6,4 +6,4 @@ num1 = float(input())
 num2 = float(input())
 num3 = float(input())
 suma = num1 + num2 + num3
-print (f"¡¡MAGIA!! la suma de los 3 números es {suma}")
+print (f"¡¡MAGIA!! la suma de los 3 números es {round(suma,2)}")
