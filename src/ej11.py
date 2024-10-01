@@ -1,3 +1,6 @@
+#Ejercicio 1.2.11
+#Escribir un programa que lea un entero positivo, n, introducido por el usuario y después muestre en pantalla la suma de todos los enteros desde 1 hasta n. La suma de los n primeros enteros positivos puede ser calculada de la siguiente forma:
+
 #Declaramos una variable que sea X=0 para poder declarar un while que mientras esa variable sea 0 entonces se repite si no, se rompe el bucle.
 X=0
 while(X==0):
