@@ -17,5 +17,5 @@ while (X==0):
     else:
         print("ERROR, ESCIBE UNA VOCAL EN MINÚSCULAS")
         X=0
-VOCAL = vocal.upper()
-print(f"{frase} {VOCAL}")
+        #Reemplazamos la vocal por la vocal que le hayamos dado en mayúsculas
+print(f"{frase.replace(vocal, vocal.upper())}")
