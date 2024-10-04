@@ -11,10 +11,11 @@ while (X==0):
     incremento = int(input())
     print("Dame el total de números que quieres")
     total = int(input())
-    if (incremento and total <0):
+    if (incremento <0 or total <0):
         print("ERROR, INTRODUZCA UN INCREMENTO Y UN TOTAL QUE NO SEA MENOR QUE 0")
     else:
         X=1
-for i in range (num,total):
-    cadena = i + incremento
-    print(cadena)
+        for i in range (num,total+1):
+            cadena = i 
+            print(cadena)
+            cadena = i + incremento 
