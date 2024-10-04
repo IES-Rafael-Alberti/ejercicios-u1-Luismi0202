@@ -1,5 +1,4 @@
-#Ejercicio 1.2.2
-#Escribe un programa para pedirle al usuario las horas de trabajo y el precio por hora y calcule el importe total del servicio.
+#ej02 => recibe horas y coste y retorna el importe total.
 def importe(horas,costes):
     return f"El importe total es {horas + costes}" 
 def main():
