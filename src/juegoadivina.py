@@ -13,7 +13,6 @@ def decimal(num):
         else:
             X=1
             num = int(num)
-            rango(num)
         
 #FUNCIÓN PARA VER SI ESTA EN EL RANGO 1-100
 def rango(num):
@@ -27,7 +26,6 @@ def rango(num):
             X=0
         else:
             X=1
-            caliente_o_frio
         
 #FUNCIÓN QUE TE DIGA CALIENTE O FRIO EN FUNCIÓN DE LO CERCA QUE ESTÉ
 
@@ -43,7 +41,7 @@ def caliente_o_frio(num,numA):
     elif diferencia <= 30:
         return "Te vas calentando...."
     elif diferencia <= 40:
-        return "¡¡Cuidado!! Te enfrías..."
+        return "Templadito templadito...."
     elif diferencia <= 50:
         return "Estás fresquito"
     elif diferencia <= 100:
