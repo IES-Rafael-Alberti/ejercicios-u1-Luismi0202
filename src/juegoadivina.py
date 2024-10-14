@@ -5,7 +5,7 @@ from random import uniform
 
 def decimal(num):
     X= 0
-    while (X ==0):
+    while (X == 0):
         if num %1 != 0:
             print("**ERROR**, SU NÚMERO DEBE SER UN ENTERO")
             num = float(input("Dame otravez el número:"))
@@ -30,7 +30,7 @@ def rango(num):
 #FUNCIÓN QUE TE DIGA CALIENTE O FRIO EN FUNCIÓN DE LO CERCA QUE ESTÉ
 
 def caliente_o_frio(num,numA):
-    #HACEMOS QUUE EL NUMERO MAYOR SE RESTE PRIMERO PARA QUE NO DE ERRORES
+    #HACEMOS QUE EL NUMERO MAYOR SE RESTE PRIMERO PARA QUE NO DE ERRORES
 
     if num < numA: 
         diferencia = numA - num
