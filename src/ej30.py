@@ -16,11 +16,8 @@ def incremento(num,aumento,total):
                 if i == num:
                     cadena += str(i) + "-"
                 else:
-                    if i == total:
-                        cadena += "-" + str(i)
-                    else:
                         cadena +=".." + str(i)
-            print(cadena)
+            print(f"{cadena}-{total}")
 def main():
     print("Dame un número")
     num = int(input())
