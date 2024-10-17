@@ -1,4 +1,3 @@
-import pytest
 from src.prueba1 import mayor
 
 def test_prueba1():
