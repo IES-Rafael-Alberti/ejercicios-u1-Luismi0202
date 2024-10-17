@@ -1,6 +1,18 @@
 from random import uniform
 
-
+#FUNCIÓN PARA VER SI ES UN NÚMERO
+def comprobar_si_num(valor:str):
+    valor= valor.strip()
+    if valor.count(".")>1:
+        return False
+    elif valor.count("-")>1:
+        return False
+    elif valor.find("-")>0:
+        return False
+    elif valor.startswith("-"):
+        return valor.isdigit()
+    else:
+        return valor.isdigit()
 #FUNCIÓN PARA VER SI ES DECIMAL
 
 def decimal(num):
@@ -51,7 +63,11 @@ def caliente_o_frio(num,numA):
 
 def main():
     print("ESTOY PENSANDO EN UN NÚMERO ENTERO QUE SE ENCUENTRA ENTRE EL 1 Y EL 100 ¿CUÁL ES?")
-    num = float(input())
+    valor = input()
+    while not comprobar_si_num(valor):
+        print("no estoy para bromas, sabes que eso no es un número")
+        valor = input()
+    num = float(valor)
     numA = round(uniform(1,100))
     decimal(num)
     rango(num)
@@ -60,19 +76,17 @@ def main():
         #SI EL NUMERO NO ES IGUAL AL NÚMERO ALEATORIO, LLAMARÁ A LA FUNCIÓN CALIENTE O FRIO PARA VER COMO DE CERCA ESTÁ.
         if num != numA:
             print(caliente_o_frio(num,numA))
-            num = float(input("No lo adivinaste! Sigue intentándolo:"))
+            valor = input("No lo adivinaste! Sigue intentándolo:")
+            while not comprobar_si_num(valor):
+                print("No estoy para bromas, introduce un número válido")
+                valor = input()
+            num = float(valor)
             decimal(num)
             rango(num)
             X=0
         else:
          X=1
          print(f"EHNORABUENA, EL NÚMERO ERA {numA}")
-
-
-
-
-
-
 
 if __name__ == "__main__":
     main()
