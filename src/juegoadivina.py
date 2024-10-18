@@ -2,17 +2,11 @@ from random import uniform
 
 #FUNCIÓN PARA VER SI ES UN NÚMERO
 def comprobar_si_num(valor:str):
-    valor= valor.strip()
-    if valor.count(".")>1:
+    try:
+        valor = float(valor)
+        return True
+    except ValueError:
         return False
-    elif valor.count("-")>1:
-        return False
-    elif valor.find("-")>0:
-        return False
-    elif valor.startswith("-"):
-        return valor.isdigit()
-    else:
-        return valor.isdigit()
 #FUNCIÓN PARA VER SI ES DECIMAL
 
 def decimal(num):
